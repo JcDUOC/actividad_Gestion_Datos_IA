@@ -6,3 +6,5 @@ en la actividad se realizo la instalacion de visual studio code, git y en el cas
 También se creo el repositorio remoto en git hub, en el local, se enlazo el local con el remoto y se hizo ek primer commit y push.
 Ádemas, se hizo la estructura se carperas esperada.
 
+Actualización 28/03/2026 : se agrego el documento de planificación.
+
