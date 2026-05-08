@@ -18,6 +18,7 @@ def ingestar(origen: str, destino_carpeta: str) -> None:
     os.makedirs(destino_carpeta, exist_ok=True)
     nombre = os.path.basename(origen)
     destino = os.path.join(destino_carpeta, nombre)
+    print(destino)
     logging.info(f"Iniciando ingesta: {origen}")
     try:
         shutil.copy(origen, destino)
