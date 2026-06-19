@@ -40,3 +40,5 @@ logging_ingesta = configurar_logger("ingesta")
 
 
 
+
+
