@@ -1,6 +1,6 @@
 import logging as lg
 import os 
-
+import pandas as pd
 
 
 #esto permite crear un logger para registro de acciones en un archivo externo. Esto para cumplir con el principio 
@@ -31,9 +31,26 @@ logging_transformacion_limpieza = configurar_logger("limpieza_transformación")
 logging_ingesta = configurar_logger("ingesta")
 
 
+def logger_archivo_inexistente(logger, nombre_arch, componente_pl):
+    logger.warning(f"ingreso una url de un archivo inexistente ({nombre_arch}) al pipeline en el componente {componente_pl}")
 
 
 
+def exportar_a_csv(df : pd.DataFrame, nombre_arch_sin_extencion, logger : lg.Logger, mensaje, carpeta_data):
+    os.makedirs(carpeta_data, exist_ok=True)
+    nuevo_archivo = f"{nombre_arch_sin_extencion}_clean.csv "
+    path_file_new = f"{carpeta_data}/" + nuevo_archivo
+
+    try:
+        df.to_csv(path_file_new, index=False, encoding="utf-8", errors="ignore")
+
+        logger.info(mensaje + nuevo_archivo)
+
+        return path_file_new
+    except Exception as e:
+        logger.exception(f"Error de exportación del archivo {nombre_arch_sin_extencion}_clean.csv: {str(e)}")
+
+        raise Exception(f"Error de exportación del archivo {nombre_arch_sin_extencion}_clean.csv: {str(e)}")
 
 
 

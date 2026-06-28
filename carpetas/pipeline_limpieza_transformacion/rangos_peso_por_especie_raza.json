@@ -1,0 +1,166 @@
+{
+  "perro": {
+    "labrador": {
+      "bajo": [null, 27],
+      "normal": [27, 34],
+      "alto": [34, 38],
+      "obeso": [38, null]
+    },
+    "pastor alemán": {
+      "bajo": [null, 28],
+      "normal": [28, 40],
+      "alto": [40, 45],
+      "obeso": [45, null]
+    },
+    "chihuahua": {
+      "bajo": [null, 1.5],
+      "normal": [1.5, 3],
+      "alto": [3, 4],
+      "obeso": [4, null]
+    },
+    "golden retriever": {
+      "bajo": [null, 25],
+      "normal": [25, 34],
+      "alto": [34, 38],
+      "obeso": [38, null]
+    },
+    "bulldog": {
+      "bajo": [null, 18],
+      "normal": [18, 25],
+      "alto": [25, 30],
+      "obeso": [30, null]
+    },
+    "beagle": {
+      "bajo": [null, 9],
+      "normal": [9, 14],
+      "alto": [14, 17],
+      "obeso": [17, null]
+    },
+    "boxer": {
+      "bajo": [null, 25],
+      "normal": [25, 32],
+      "alto": [32, 36],
+      "obeso": [36, null]
+    },
+    "rottweiler": {
+      "bajo": [null, 35],
+      "normal": [35, 50],
+      "alto": [50, 60],
+      "obeso": [60, null]
+    },
+    "husky": {
+      "bajo": [null, 16],
+      "normal": [16, 27],
+      "alto": [27, 32],
+      "obeso": [32, null]
+    },
+    "caniche": {
+      "bajo": [null, 18],
+      "normal": [18, 32],
+      "alto": [32, 36],
+      "obeso": [36, null]
+    },
+    "san bernardo": {
+      "bajo": [null, 55],
+      "normal": [55, 82],
+      "alto": [82, 90],
+      "obeso": [90, null]
+    },
+    "mestizo": {
+      "bajo": [null, 10],
+      "normal": [10, 25],
+      "alto": [25, 35],
+      "obeso": [35, null]
+    },
+    "dálmata": {
+      "bajo": [null, 20],
+      "normal": [20, 32],
+      "alto": [32, 36],
+      "obeso": [36, null]
+    },
+    "collie": {
+      "bajo": [null, 18],
+      "normal": [18, 30],
+      "alto": [30, 35],
+      "obeso": [35, null]
+    },
+    "pitbull": {
+      "bajo": [null, 18],
+      "normal": [18, 30],
+      "alto": [30, 35],
+      "obeso": [35, null]
+    },
+    "doberman": {
+      "bajo": [null, 30],
+      "normal": [30, 40],
+      "alto": [40, 45],
+      "obeso": [45, null]
+    },
+    "schnauzer": {
+      "bajo": [null, 14],
+      "normal": [14, 20],
+      "alto": [20, 24],
+      "obeso": [24, null]
+    },
+    "cocker spaniel": {
+      "bajo": [null, 10],
+      "normal": [10, 15],
+      "alto": [15, 18],
+      "obeso": [18, null]
+    }
+  },
+  "gato": {
+    "doméstico": {
+      "bajo": [null, 3],
+      "normal": [3, 5],
+      "alto": [5, 6],
+      "obeso": [6, null]
+    },
+    "persa": {
+      "bajo": [null, 3],
+      "normal": [3, 5.5],
+      "alto": [5.5, 7],
+      "obeso": [7, null]
+    },
+    "siamés": {
+      "bajo": [null, 2.5],
+      "normal": [2.5, 5],
+      "alto": [5, 6],
+      "obeso": [6, null]
+    },
+    "angora": {
+      "bajo": [null, 2.5],
+      "normal": [2.5, 5],
+      "alto": [5, 6],
+      "obeso": [6, null]
+    },
+    "maine coon": {
+      "bajo": [null, 4.5],
+      "normal": [4.5, 8.5],
+      "alto": [8.5, 10],
+      "obeso": [10, null]
+    },
+    "bengalí": {
+      "bajo": [null, 3],
+      "normal": [3, 6],
+      "alto": [6, 7],
+      "obeso": [7, null]
+    }
+  },
+  "pez": {
+    "payaso": {
+      "bajo": [null, 0.15],
+      "normal": [0.15, 0.30],
+      "alto": [0.30, 0.40],
+      "obeso": [0.40, null]
+    }
+  },
+  "loro": {
+    "cotorra": {
+      "bajo": [null, 0.08],
+      "normal": [0.08, 0.12],
+      "alto": [0.12, 0.15],
+      "obeso": [0.15, null]
+    }
+  }
+}
