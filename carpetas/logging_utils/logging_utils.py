@@ -33,12 +33,13 @@ logging_ingesta = configurar_logger("ingesta")
 
 def logger_archivo_inexistente(logger, nombre_arch, componente_pl):
     logger.warning(f"ingreso una url de un archivo inexistente ({nombre_arch}) al pipeline en el componente {componente_pl}")
+    raise Exception(f"entro un archivo inexistente a {componente_pl}")
 
 
 
-def exportar_a_csv(df : pd.DataFrame, nombre_arch_sin_extencion, logger : lg.Logger, mensaje, carpeta_data):
+def exportar_a_csv(df : pd.DataFrame, nombre_arch_sin_extencion, logger : lg.Logger, mensaje, carpeta_data, sufijo = "_clean"):
     os.makedirs(carpeta_data, exist_ok=True)
-    nuevo_archivo = f"{nombre_arch_sin_extencion}_clean.csv "
+    nuevo_archivo = f"{nombre_arch_sin_extencion}{sufijo}.csv "
     path_file_new = f"{carpeta_data}/" + nuevo_archivo
 
     try:
